@@ -59,7 +59,7 @@ There are also limits on how many messages can be sent per day and to how many f
    * 2500 total recipients per 24 hours
 
 | Requesting User| Target User's Privacy Setting| Behavior|
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | me| -| As described.|
 | friend| everyone| 200 OK|
 | friend| friends only| 200 OK|
