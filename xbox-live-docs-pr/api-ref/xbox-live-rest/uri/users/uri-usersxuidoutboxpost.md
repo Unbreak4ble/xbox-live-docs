@@ -60,7 +60,7 @@ There are also limits on how many messages can be sent per day and to how many f
 
 | Requesting User| Target User's Privacy Setting| Behavior|
 | --- | --- | --- |
-| me| -| As described.|
+| me| | As described.|
 | friend| everyone| 200 OK|
 | friend| friends only| 200 OK|
 | friend| blocked| 200 OK|
