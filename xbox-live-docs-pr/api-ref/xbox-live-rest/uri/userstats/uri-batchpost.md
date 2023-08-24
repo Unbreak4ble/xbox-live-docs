@@ -77,7 +77,7 @@ If (!checkAccess(serviceConfigId, resource, CLAIM[userid, deviceid, titleid]))
 ## Optional Request Headers
  
 | Header| Type| Description| 
-| --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- | 
 | X-RequestedServiceVersion|  | Build name/number of the service to which this request should be directed. The request will only be routed to that service after verifying the validity of the header, the claims in the authentication token, and so on. Default value: 1.| 
   
 <a id="ID4EAF"></a>
@@ -128,7 +128,7 @@ the following POST body informs the service that four statistics are being reque
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
  
 | Code| Reason phrase| Description| 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- |
 | 200| OK| The session was successfully retrieved.| 
 | 304| Not Modified| Resource not been modified since last requested.| 
 | 400| Bad Request| Service could not understand malformed request. Typically an invalid parameter.| 
