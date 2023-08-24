@@ -118,7 +118,7 @@ There are also limits on how many messages can be sent per day and to how many f
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
 
 | Code| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- |
 | 200| Success.|
 | 400| List of recipients is empty or exceeds maximum length; or both gamertag and XUID were specified; or messageText is too long.|
 | 403| XUID cannot be converted.|
