@@ -47,7 +47,7 @@ To include value metadata in the response, the request call must also set the he
 ## Query string parameters
 
 | Parameter| Type| Description|
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | statNames| string| A comma delimited list of user statistic names.For example, the following URI informs the service that four statistics are requested on behalf of the user id specified in the URI.{::nomakrdown}<br/><br/>`https://userstats.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/wins,kills,kdratio,headshots?include=valuemetadata`| 
 | include=valuemetadata| string| Indicates that the response includes any value metadata associated with the uset stat values.|
 
@@ -79,7 +79,7 @@ If (!checkAccess(serviceConfigId, resource, CLAIM[userid, deviceid, titleid]))
 ## Required Request Headers
 
 | Header| Type| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | Authorization| string| Authentication credentials for HTTP authentication. Example value: "XBL3.0 x=&lt;userhash>;&lt;token>".|
 | X-Xbl-Contract-Version| string| Indicates which version of the API to use. This value must be set to "3" in order to include value metadata in the response.|
 
@@ -89,7 +89,7 @@ If (!checkAccess(serviceConfigId, resource, CLAIM[userid, deviceid, titleid]))
 ## Optional Request Headers
 
 | Header| Type| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | X-RequestedServiceVersion|  | Build name/number of the service to which this request should be directed. The request will only be routed to that service after verifying the validity of the header, the claims in the authentication token, and so on. Default value: 1.|
 
 
@@ -107,7 +107,7 @@ No objects are sent in the body of this request.
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
 
 | Code| Reason phrase| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | 200| OK| The session was successfully retrieved.|
 | 304| Not Modified| Resource not been modified since last requested.|
 | 400| Bad Request| Service could not understand malformed request. Typically an invalid parameter.|
