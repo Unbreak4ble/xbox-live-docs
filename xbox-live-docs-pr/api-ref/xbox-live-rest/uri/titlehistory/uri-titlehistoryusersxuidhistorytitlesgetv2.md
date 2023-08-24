@@ -34,7 +34,7 @@ The domain for these URIs is `achievements.xboxlive.com`.
 ## Query string parameters
  
 | Parameter| Required| Type| Description| 
-| --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- | ---- |
 | skipItems| No| 32-bit signed integer| Return items beginning after the given number of items. For example, <b>skipItems="3"</b> will retrieve items beginning with the fourth item retrieved. | 
 | continuationToken| No| string| Return the items starting at the given continuation token. | 
 | maxItems| No| 32-bit signed integer| Maximum number of items to return from the collection, which can be combined with <b>skipItems</b> and <b>continuationToken</b> to return a range of items. The service may provide a default value if <b>maxItems</b> is not present, and may return fewer than <b>maxItems</b>, even if the last page of results has not yet been returned. | 
@@ -45,7 +45,7 @@ The domain for these URIs is `achievements.xboxlive.com`.
 ## Authorization
  
 | Claim| Required?| Description| Behavior if missing| 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | User| Caller is an authorized Xbox LIVE user.| The caller needs to be a valid user on Xbox LIVE.| 403 Forbidden| 
   
 <a id="ID4EGE"></a>
@@ -54,7 +54,7 @@ The domain for these URIs is `achievements.xboxlive.com`.
 ## Optional Request Headers
  
 | Header| Type| Description| 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- |
 | <b>X-RequestedServiceVersion</b>| string| Build name/number of the Xbox LIVE service to which this request should be directed. The request will only be routed to that service after verifying the validity of the header, the claims in the auth token, etc.| 
 | <b>x-xbl-contract-version</b>| 32-bit unsigned integer| If present and set to 2, the V2 version of this API will be used. Otherwise, V1.| 
   
