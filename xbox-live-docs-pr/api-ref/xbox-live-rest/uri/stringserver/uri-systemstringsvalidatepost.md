@@ -30,7 +30,7 @@ Identical strings will always give identical results. If you receive a non-succe
  
  
 
-> [!NOTE] 
+> [!NOTE]
 > The resulting <b>VerifyStringResult</b> will only report the first offending word in the string. There might be additional offending words within the string. If you plan to replace the offending words to make the string usable, you should replace the offending word or substring and then re-verify the string to look for additional offending substrings.  
 
  
@@ -41,7 +41,7 @@ Identical strings will always give identical results. If you receive a non-succe
 ## Required Request Headers
  
 | Header| Description| 
-| --- | --- | --- | 
+| --- | --- |
 | Authorization| Authentication Token. Example: XBL3.0 x=[hash];[token].| 
 | x-xbl-contract-version| Integer API contract version. Must be 1 or 2 for this API.| 
   
@@ -80,7 +80,7 @@ The request body is an array of strings, with no limits on the size of the array
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
  
 | Code| Reason phrase| Description| 
-| --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- |
 | 200| OK| All strings were processed successfully. This does not necessarily mean all strings had positive HResults.| 
 | 401| Unauthorized| The request requires user authentication.| 
 | 403| Forbidden| The request is not allowed for the user or service.| 
