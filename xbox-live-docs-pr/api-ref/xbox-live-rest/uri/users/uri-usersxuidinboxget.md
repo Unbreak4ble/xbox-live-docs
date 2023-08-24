@@ -47,7 +47,7 @@ The only content type this API supports is "application/json", which is required
 ## Query string parameters
 
 | Property| Type| Maximum Length| Remarks|
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | maxItems| int| 100| Maximum number of messages returned.|
 | continuationToken| string|  | String returned in a previous enumeration call; used to continue enumeration.|
 | skipItems| int| 100| Number of messages to skip; ignored if continuationToken is present.|
@@ -74,7 +74,7 @@ Only you can enumerate your own user messages.
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
 
 | Code| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- |
 | 200| The request was successful.|
 | 400| Service could not understand malformed request. Typically an invalid parameter.|
 | 403| The request is not allowed for the user or service.|
@@ -162,7 +162,7 @@ If called successfully, the service returns the results data in a JSON format.
 In case of error, the service may return an errorResponse object, which may contain values from the environment of the service.
 
 | Property| Type| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | errorSource| string| An indication of where the error originated.|
 | errorCode| int| Numeric code associated with the error (can be null).|
 | errorMessage| string| Details of the error if configured to show details.|
