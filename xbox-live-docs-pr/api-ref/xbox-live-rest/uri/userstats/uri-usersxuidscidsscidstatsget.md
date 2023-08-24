@@ -46,7 +46,7 @@ clients need a way to read and write title statistics on behalf of players to ou
 ## Query string parameters
 
 | Parameter| Type| Description|
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | statNames| string| The only query string parameter is the comma delimited user statistic name URI noun.For example, the following URI informs the service that four statistics are requested on behalf of the user id specified in the URI. `https://userstats.xboxlive.com/users/xuid({xuid})/scids/{scid}/stats/wins,kills,kdratio,headshots`There will be a limit on the number of statistics that can be requested in a single call, and that limit will carefully consider a "sweet spot" for developer convenience vs. URI length practicality. For example, the limit might be determined by either 600 characters worth of statistic name text (including the commas), or 10 statistics maximum. Enabling a simple GET like this enables HTTP caching for commonly requested statistics, which reduces call volume from chatty clients. |
 
 <a id="ID4EUC"></a>
@@ -79,7 +79,7 @@ If (!checkAccess(serviceConfigId, resource, CLAIM[userid, deviceid, titleid]))
 ## Required Request Headers
 
 | Header| Type| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | Authorization| string| Authentication credentials for HTTP authentication. Example value: "XBL3.0 x=&lt;userhash>;&lt;token>".|
 
 <a id="ID4EYE"></a>
@@ -88,7 +88,7 @@ If (!checkAccess(serviceConfigId, resource, CLAIM[userid, deviceid, titleid]))
 ## Optional Request Headers
 
 | Header| Type| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | X-RequestedServiceVersion|  | Build name/number of the service to which this request should be directed. The request will only be routed to that service after verifying the validity of the header, the claims in the authentication token, and so on. Default value: 1.|
 
 <a id="ID4E3F"></a>
@@ -106,7 +106,7 @@ No objects are sent in the body of this request.
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
 
 | Code| Reason phrase| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | 200| OK| The session was successfully retrieved.|
 | 304| Not Modified| Resource not been modified since last requested.|
 | 400| Bad Request| Service could not understand malformed request. Typically an invalid parameter.|
