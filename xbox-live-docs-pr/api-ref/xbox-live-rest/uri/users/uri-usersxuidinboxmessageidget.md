@@ -71,7 +71,7 @@ Only you can retrieve your own user messages.
 The service returns one of the status codes in this section in response to a request made with this method on this resource. For a complete list of standard HTTP status codes used with Xbox Live Services, see [Standard HTTP status codes](../../additional/httpstatuscodes.md).
 
 | Code| Description|
-| --- | --- | --- | --- | --- |
+| --- | --- |
 | 200| Success.|
 | 400| The XUID cannot be converted properly.|
 | 403| The XUID cannot be converted or a valid XUID claim cannot be found.|
@@ -130,7 +130,7 @@ If called successfully, the service returns the results data in a JSON format. T
 In case of error, the service may return an errorResponse object, which may contain values from the environment of the service.
 
 | Property| Type| Description|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | errorSource| string| An indication of where the error originated.|
 | errorCode| int| Numeric code associated with the error (can be null).|
 | errorMessage| string| Details of the error if configured to show details.|
